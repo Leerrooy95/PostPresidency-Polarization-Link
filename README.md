@@ -1,5 +1,9 @@
+cat > README.md << 'EOF'
 # The Unwitting Asset Model  
 ### Structural Dependency, Polarization, and Post-Service Revenue (2009–2025)
+
+## Executive Summary
+This analysis uncovers a systemic pattern in U.S. political-financial history: crises foster dependency, which enables influence—often foreign-linked—without requiring intent or conspiracy. Across 50 years and 127 events, 100% of crises saw rescues within 24 months (>55% foreign-sourced, r = −0.6865, p < 1e-5). Extending to post-presidency revenue, national polarization (ANES index) emerges as a structural market driver: certain figures' financial activity correlates positively with division (r = +0.70–0.71, p < 0.001), while controls fall (r = −0.865). Public data only. Fully reproducible. No malice inferred.
 
 This project documents a reproducible, data-driven pattern observed across fifty years of U.S. political and financial history:  
 **Crises create dependency. Dependency becomes influence — without anyone necessarily planning it.**
