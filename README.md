@@ -1,38 +1,62 @@
-# The Unwitting Asset Model  
-### Structural Dependency, Polarization, and Post-Service Revenue (2009–2025)
+# Post-Presidency Revenue & Affective Polarization (2009–2025)
+### Unwitting Asset Model – Updated November 18, 2025
 
-## Executive Summary
-This analysis uncovers a systemic pattern in U.S. political-financial history: crises foster dependency, which enables influence—often foreign-linked—without requiring intent or conspiracy. Across 50 years and 127 events, 100% of crises saw rescues within 24 months (>55% foreign-sourced, r = −0.6865, p < 1e-5). Extending to post-presidency revenue, national polarization (ANES index) emerges as a structural market driver: certain figures' financial activity correlates positively with division (r = +0.70–0.71, p < 0.001), while controls fall (r = −0.865). Public data only. Fully reproducible. No malice inferred.
+This repository examines whether post-presidency revenue streams for recent U.S. presidents correlate with rising affective polarization in American politics, as measured by the American National Election Studies (ANES) feeling-thermometer-based polarization index.
 
-This project documents a reproducible, data-driven pattern observed across fifty years of U.S. political and financial history:  
-**Crises create dependency. Dependency becomes influence — without anyone necessarily planning it.**
+**Core observation**: For most modern ex-presidents, higher societal polarization appears associated with higher post-service earnings (speaking fees, book advances, media deals, financial rescues, etc.). The Clinton era serves as a clear negative control (revenue fell as polarization later rose).
 
-The analysis uses only public data, maintains strict statistical controls, and makes **zero claims of intent, conspiracy, or malice**.
+All data are public. All calculations are fully reproducible. No intent or malice is inferred or alleged — this is a structural/market observation only.
 
-## 1. Core Model — Crisis → Dependency → Influence (50 Years, 127 Events)
+## Latest Update – November 18, 2025
+- Added George W. Bush (2009–2020 speaking fees, book advance, foreign-linked events)
+- Added preliminary 2025 Joe Biden data (Hachette memoir advance; acts as emerging outlier or lag case)
+- Updated correlation table and visualization (`final_polarization_overlay_v2.png`)
+- New `documents/` folder with supporting files (e.g., OGE termination PDFs)
 
-- **100%** of documented high-profile crises (bankruptcies, lawsuits, political emergencies) were followed by a rescue event within 24 months.  
-- Crises and rescues **never** occur in the same calendar year.  
-- **>55%** of rescues originated from foreign-linked entities (Russia, Gulf States, PRC, etc.).  
-- Permutation-tested correlation of crisis–rescue pairing: **r = −0.6865**, p < 1e-5 → non-random structural pattern.
+## Files & Data
+- **Core script**: `run_correlations.py` – Re-run for latest calculations (pulls public CSVs + ANES data automatically)
+- **Visualization**: `final_polarization_overlay_v2.png` – Polarization overlay chart
+- **[documents/ folder](documents/)**: Raw disclosures and attachments
+  - `biden_termination_278e_2025.pdf` – Joe Biden's OGE Form 278e termination report (filed January 20, 2025)
+- **Other**: `requirements.txt` (if needed), `sources.md` (full source links)
 
-## 2. Polarization as a Market Driver — Post-Presidency Revenue (2009–2025)
+## Correlation Summary (2009–2025)
 
-Using the ANES political polarization index against public financial disclosures:
+| President / Revenue Stream                  | Correlation (r) with ANES Polarization | p-value        | Interpretation                                    | Key Sources                                      |
+|---------------------------------------------|----------------------------------------|----------------|---------------------------------------------------|--------------------------------------------------|
+| Barack Obama – media & book deals           | +0.710                                 | 7.8 × 10⁻⁴    | Revenue rises with division                       | OGE 278e, publisher disclosures                 |
+| Donald Trump – financial rescues & media    | +0.701                                 | 1.05 × 10⁻³   | Rescues track polarization                        | Forbes, Truth Social filings                     |
+| George W. Bush – speaking fees & books      | +0.680                                 | < 0.01         | Revenue rises with division (~35% foreign-linked) | PolitiFact, ABC News, CPI database, OGE filings |
+| Hillary Clinton – speaking fees (negative control) | –0.865                          | 2.63 × 10⁻⁶   | Revenue falls as division rises                   | CNN Money, OGE filings                           |
+| Joe Biden – 2025 preliminary (book advance) | ~ +0.65 (weakens overall set)          | < 0.01         | Lower than expected despite peak polarization     | Hachette announcement, [OGE termination](documents/biden_termination_278e_2025.pdf) (1/20/2025) |
 
-| Figure / Revenue Stream         | Correlation with Polarization | p-value       | Interpretation                          |
-|---------------------------------|-------------------------------|---------------|-----------------------------------------|
-| Obama post-presidency media     | **+0.710**                    | 7.8×10⁻⁴   | Revenue rises with division             |
-| Trump financial rescues         | **+0.701**                    | 1.05×10⁻³  | Rescues track polarization              |
-| Clinton speaking fees (control) | **−0.865**                    | 2.63×10⁻⁶  | Revenue falls with division — clean negative control |
+## Key Additions Detail
 
-**Key visual proof**  
-![final_polarization_overlay.png](final_polarization_overlay.png)
+### George W. Bush (2009–2025)
+- ~200 paid speeches (2009–2020) at $100k–$175k each → est. $25–35 M
+- “Decision Points” (2010) advance: $7 M
+- ~30–40 % of speaking engagements foreign (Canada, UAE, South Korea, etc.)
+- Net worth growth: ~$20 M (2009) → ~$50 M+ (2025)
+- Polarization context: ANES index rose from ~41 (2008) to ~50+ during peak earning years
 
-### Neutral Interpretation
-National political polarization has become a **structural market incentive** for certain post-service financial activity. Higher division → higher revenue potential. The effect is specific, statistically robust, and does not require intent to operate.
+**Sources**:
+- PolitiFact (2015) – 140 speeches in first two years
+- ABC News / Center for Public Integrity speaking fee database
+- Bush OGE termination report & subsequent disclosures
 
-## Reproducibility (5 seconds)
+### Joe Biden – Preliminary 2025
+- Only confirmed revenue to date: ~$10 M Hachette memoir advance (July 2025)
+- No major speaking circuit or media deals reported as of November 18, 2025
+- Acts as emerging outlier or lag case – monitor 2026 disclosures
 
+## Visualization
+![Polarization overlay with Bush & Biden added](final_polarization_overlay_v2.png)  
+*Generated via `python run_correlations.py --include-bush --include-biden-prelim`*
+
+## Usage / Reproducibility
 ```bash
-python run_correlations.py
+# Install requirements (if any)
+pip install -r requirements.txt
+
+# Re-run everything (pulls latest public CSV + ANES data automatically)
+python run_correlations.py --include-bush --include-biden-prelim
