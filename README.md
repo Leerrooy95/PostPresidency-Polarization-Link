@@ -1,29 +1,19 @@
 # Post-Service Revenue Extension (2009–2025)
-### Unwitting Asset Model – Updated November 18, 2025
+### Unwitting Asset Model — Updated November 18, 2025
 
-This repository documents an observed correlation between rising affective polarization in the United States (measured by the ANES feeling-thermometer polarization index) and post-presidency revenue streams for recent former presidents.
+Observed correlation between rising ANES affective polarization and post-presidency revenue streams (Obama, Trump, Bush, Clinton control, preliminary Biden).
 
-All data presented are from public sources. All calculations are reproducible in principle (spreadsheet or simple Python). No intent, coordination, or malice is alleged — this is presented purely as a structural observation.
+All data public · No intent or malice alleged · Structural observation only
 
-## Complete Content (November 18, 2025 update)
+### Full analysis (text + table + new Bush & Biden sections)
+![Page 1](page1.png)
 
-![Page 1 – Full analysis, table, and new Bush & Biden sections](page1.png)
+### Updated visualization (Bush & Biden added)
+![Page 2](page2.png)
 
-![Page 2 – Updated visualization](page2.png)
+*Chart generated November 18, 2025*
 
-### Key points from the update
-- George W. Bush data added (≈$25–35 M in speaking fees 2009–2020, ~35 % foreign-linked)
-- Joe Biden 2025 preliminary data added (~$10 M Hachette advance only; emerging outlier or lag case)
-- Correlation table and overlay chart updated accordingly
-- Biden termination OGE Form 278e (filed January 20, 2025) referenced
-
-## Correlation Summary (as of November 18, 2025)
-
-| President / Revenue Stream                  | r with ANES Polarization | p-value       | Interpretation                                    |
-|---------------------------------------------|---------------------------|---------------|---------------------------------------------------|
-| Obama – media & book deals                  | +0.710                    | 7.8 × 10⁻⁴   | Revenue rises with division                       |
-| Trump – financial rescues & media           | +0.701                    | 1.05 × 10⁻³  | Rescues track polarization                        |
-| George W. Bush – speaking fees & books      | +0.680                    | < 0.01        | Revenue rises with division (~35 % foreign-linked)|
+Last updated: November 18, 2025
 | Clinton – speaking fees (negative control)  | –0.865                    | 2.63 × 10⁻⁶  | Revenue falls as division rises                   |
 | Biden – 2025 preliminary (book advance)     | ~ +0.65                   | < 0.01        | Lower than expected despite peak polarization     |
 
