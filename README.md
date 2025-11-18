@@ -1,4 +1,3 @@
-cat > README.md << 'EOF'
 # The Unwitting Asset Model  
 ### Structural Dependency, Polarization, and Post-Service Revenue (2009–2025)
 
