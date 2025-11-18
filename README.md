@@ -49,10 +49,6 @@ All data are public. All calculations are fully reproducible. No intent or malic
 - No major speaking circuit or media deals reported as of November 18, 2025
 - Acts as emerging outlier or lag case – monitor 2026 disclosures
 
-## Visualization
-![Polarization overlay with Bush & Biden added](final_polarization_overlay_v2.png)  
-*Generated via `python run_correlations.py --include-bush --include-biden-prelim`*
-
 ## Usage / Reproducibility
 ```bash
 # Install requirements (if any)
