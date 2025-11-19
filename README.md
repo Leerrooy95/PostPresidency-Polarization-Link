@@ -25,9 +25,6 @@ All data public. All calculations reproducible via `run_correlations.py`.
 - No major speaking circuit or media deals reported as of November 18, 2025  
 - Acts as emerging outlier or lag case — monitor 2026 disclosures
 
-### Visual Proof
-![page2.png](page2.png)
-
 ### Reproducibility
 ```bash
 pip install -r requirements.txt   # if any
