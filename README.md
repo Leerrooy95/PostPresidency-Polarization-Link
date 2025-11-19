@@ -12,6 +12,25 @@ All data public. All calculations reproducible via `run_correlations.py`.
 | Trump – financial rescues & media        | **+0.701**                             | 1.05 × 10⁻³  | Rescues track polarization              | Forbes, Truth Social filings |
 | George W. Bush – speaking fees & books   | **+0.680**                             | < 0.01        | Revenue rises with division (~35 % foreign-linked) | PolitiFact, ABC News, CPI database, OGE filings |
 | Clinton – speaking fees (negative control)   | **–0.865**                             | 2.63 × 10⁻⁶  | Revenue falls with division             | CNN Money, OGE filings |
+| Biden – 2025 preliminary (book advance)  | **~+0.65** (weaker)                    | < 0.01        | Lower than expected despite peak polarization | Hachette announcement, OGE termination 1/20/2025 |
+
+### George W. Bush – Added November 18, 2025
+- ~200 paid speeches (2009–2020) @ $100k–$175k → est. $25–35 M total  
+- “Decision Points” advance (2010): $7 M  
+- ~30–40 % of engagements foreign (Canada, UAE, South Korea, etc.)  
+- Net worth growth: ~$20 M (2009) → ~$50 M+ (2025)
+
+### Joe Biden – Preliminary 2025
+- Only confirmed post-service revenue to date: ~$10 M Hachette memoir advance (July 2025)  
+- No major speaking circuit or media deals reported as of November 18, 2025  
+- Acts as emerging outlier or lag case — monitor 2026 disclosures
+
+### Reproducibility
+```bash
+pip install -r requirements.txt   # if any
+python run_correlations.py| Trump – financial rescues & media        | **+0.701**                             | 1.05 × 10⁻³  | Rescues track polarization              | Forbes, Truth Social filings |
+| George W. Bush – speaking fees & books   | **+0.680**                             | < 0.01        | Revenue rises with division (~35 % foreign-linked) | PolitiFact, ABC News, CPI database, OGE filings |
+| Clinton – speaking fees (negative control)   | **–0.865**                             | 2.63 × 10⁻⁶  | Revenue falls with division             | CNN Money, OGE filings |
 | Biden – 2025 preliminary (book advance)  | ~ **+0.65** (weaker)                   | < 0.01        | Lower than expected despite peak polarization | Hachette announcement, OGE termination 1/20/2025 |
 
 ### George W. Bush – Added November 18, 2025
