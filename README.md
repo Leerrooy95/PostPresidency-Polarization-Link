@@ -1,38 +1,37 @@
 # Post-Service Revenue Extension (2009–2025)
 ### Unwitting Asset Model — Updated November 18, 2025
 
-Observed correlation between rising ANES affective polarization and post-presidency revenue streams (Obama, Trump, Bush, Clinton control, preliminary Biden).
+Extends the core crisis → dependency → influence pattern to post-presidency revenue streams, using the ANES affective polarization index as a structural market driver.
 
-All data public · No intent or malice alleged · Structural observation only
+All data public. All calculations reproducible via `run_correlations.py`.  
+**No intent or malice inferred — structural observation only.**
 
-### Full analysis (text + table + new Bush & Biden sections)
-![Page 1](page1.png)
+| Figure / Revenue Stream                  | Correlation (r) with ANES Polarization | p-value       | Interpretation                          | Key Sources |
+|------------------------------------------|----------------------------------------|---------------|-----------------------------------------|-------------|
+| Obama – media & book deals               | **+0.710**                             | 7.8 × 10⁻⁴   | Revenue rises with division             | OGE 278e, publisher disclosures |
+| Trump – financial rescues & media        | **+0.701**                             | 1.05 × 10⁻³  | Rescues track polarization              | Forbes, Truth Social filings |
+| George W. Bush – speaking fees & books   | **+0.680**                             | < 0.01        | Revenue rises with division (~35 % foreign-linked) | PolitiFact, ABC News, CPI database, OGE filings |
+| Clinton – speaking fees (negative control)   | **–0.865**                             | 2.63 × 10⁻⁶  | Revenue falls with division             | CNN Money, OGE filings |
+| Biden – 2025 preliminary (book advance)  | ~ **+0.65** (weaker)                   | < 0.01        | Lower than expected despite peak polarization | Hachette announcement, OGE termination 1/20/2025 |
 
-### Updated visualization (Bush & Biden added)
-![Page 2](page2.png)
+### George W. Bush – Added November 18, 2025
+- ~200 paid speeches (2009–2020) @ $100k–$175k → est. $25–35 M total  
+- “Decision Points” advance (2010): $7 M  
+- ~30–40 % of engagements foreign (Canada, UAE, South Korea, etc.)  
+- Net worth growth: ~$20 M (2009) → ~$50 M+ (2025)
 
-*Chart generated November 18, 2025*
+### Joe Biden – Preliminary 2025
+- Only confirmed post-service revenue to date: ~$10 M Hachette memoir advance (July 2025)  
+- No major speaking circuit or media deals reported as of November 18, 2025  
+- Acts as emerging outlier or lag case — monitor 2026 disclosures
 
-Last updated: November 18, 2025
-| Clinton – speaking fees (negative control)  | –0.865                    | 2.63 × 10⁻⁶  | Revenue falls as division rises                   |
-| Biden – 2025 preliminary (book advance)     | ~ +0.65                   | < 0.01        | Lower than expected despite peak polarization     |
+### Visual Proof
+![page2.png](page2.png)
 
-Visualization: see **page2.png** above (generated November 18, 2025).
-
-## Sources
-All figures are derived from publicly available disclosures:
-- ANES Time Series Cumulative Data File
-- OGE Form 278e filings and termination reports
-- Publisher advances, Forbes tracking, PolitiFact, ABC News / Center for Public Integrity speaking-fee databases, SEC filings, etc.
-
-## Disclaimer
-This repository contains only public financial and survey data with accompanying analysis. Nothing herein asserts wrongdoing or coordination of any kind.
-
-Last updated: November 18, 2025  
-Open an issue or submit a pull request if newer public disclosures become available.| Donald Trump – financial rescues & media    | +0.701                                 | 1.05 × 10⁻³   | Rescues track polarization                        | Forbes, Truth Social filings                     |
-| George W. Bush – speaking fees & books      | +0.680                                 | < 0.01         | Revenue rises with division (~35% foreign-linked) | PolitiFact, ABC News, CPI database, OGE filings |
-| Hillary Clinton – speaking fees (negative control) | –0.865                          | 2.63 × 10⁻⁶   | Revenue falls as division rises                   | CNN Money, OGE filings                           |
-| Joe Biden – 2025 preliminary (book advance) | ~ +0.65 (weakens overall set)          | < 0.01         | Lower than expected despite peak polarization     | Hachette announcement, [OGE termination](documents/biden_termination_278e_2025.pdf) (1/20/2025) |
+### Reproducibility
+```bash
+pip install -r requirements.txt   # if any
+python run_correlations.py| Joe Biden – 2025 preliminary (book advance) | ~ +0.65 (weakens overall set)          | < 0.01         | Lower than expected despite peak polarization     | Hachette announcement, [OGE termination](documents/biden_termination_278e_2025.pdf) (1/20/2025) |
 
 ## Key Additions Detail
 
